@@ -1,22 +1,13 @@
-package com.example.bankingapp
+package com.example.agil_financiera
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.transition.Scene
-import android.transition.Transition
-import android.util.Log
-import android.view.View
-import android.widget.ImageView
-import android.widget.Toast
-import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.bankingapp.adapter.ItemAdapter
-import com.example.bankingapp.databinding.ActivityCustomersBinding
-import com.example.bankingapp.databinding.ListItemCustBinding
-import com.example.bankingapp.dbHelper.DBhelper
-import com.example.bankingapp.model.Customer
+import com.example.agil_financiera.adapter.ItemAdapter
+import com.example.agil_financiera.databinding.ActivityCustomersBinding
+import com.example.agil_financiera.dbHelper.DBhelper
 
 class Customers : AppCompatActivity(){
     private lateinit var dbHelper:DBhelper

@@ -1,4 +1,4 @@
-package com.example.bankingapp
+package com.example.agil_financiera
 
 import org.junit.Test
 

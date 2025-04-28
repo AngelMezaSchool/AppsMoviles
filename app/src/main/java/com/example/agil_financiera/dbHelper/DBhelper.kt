@@ -1,13 +1,11 @@
-package com.example.bankingapp.dbHelper
+package com.example.agil_financiera.dbHelper
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import android.util.Log
-import android.widget.Toast
-import com.example.bankingapp.model.Customer
-import com.example.bankingapp.model.Transaction
+import com.example.agil_financiera.model.Customer
+import com.example.agil_financiera.model.Transaction
 
 
 class DBhelper(context: Context) :

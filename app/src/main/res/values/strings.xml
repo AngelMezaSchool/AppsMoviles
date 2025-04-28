@@ -1,24 +1,26 @@
 <resources>
-    <string name="app_name">BankingApp</string>
-    <string name="Welcome">Welcome!</string>
-    <string name="ViewCust">View Customers</string>
-    <string name="CustDetail">Customer Detail</string>
-    <string name="AccountNo">Account No.</string>
+    <string name="app_name">Agil Financiera</string>
+    <string name="Welcome">Hola!</string>
+    <string name="ViewCust">Ver contectos</string>
+    <string name="CustDetail">Detalles</string>
+    <string name="AccountNo">Cuenta No.</string>
     <string name="ifsc">IFSC code:</string>
-    <string name="transferTo">Transfer to</string>
-    <string name="selectPerson">Select the person to transfer money</string>
-    <string name="amount">Amount</string>
-    <string name="success">Success</string>
+    <string name="transferTo">Transferir</string>
+    <string name="selectPerson">Seleccionar cuenta</string>
+    <string name="amount">Cantidad</string>
+    <string name="success">Exito</string>
     <string-array name="Persons">
-        <item>Shyam Singh</item>
-        <item>Atharva Mittal</item>
-        <item>Hridyansh Shah</item>
-        <item>Akshay Agarwal</item>
-        <item>Rajesh Sharma</item>
-        <item>Shubh Mittal</item>
-        <item>Sparsh Bansal</item>
-        <item>Rajat Garg</item>
-        <item>Ksheetiz Agrahari</item>
-        <item>Tushar Srivastava</item>
+        <item>Juan Pérez</item>
+        <item>Ángel Martínez</item>
+        <item>Diego López</item>
+        <item>Carlos García</item>
+        <item>José Rodríguez</item>
+        <item>Luis Fernández</item>
+        <item>Miguel Sánchez</item>
+        <item>David Torres</item>
+        <item>Rubén Díaz</item>
+        <item>Sergio Ruiz</item>
     </string-array>
 </resources>
+
+

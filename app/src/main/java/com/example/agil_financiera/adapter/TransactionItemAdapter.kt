@@ -1,12 +1,11 @@
-package com.example.bankingapp.adapter
+package com.example.agil_financiera.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.bankingapp.databinding.ListItemCustBinding
-import com.example.bankingapp.databinding.TransactionItemLayoutBinding
-import com.example.bankingapp.model.Transaction
+import com.example.agil_financiera.databinding.TransactionItemLayoutBinding
+import com.example.agil_financiera.model.Transaction
 
 class TransactionItemAdapter(
     private val context: Context,

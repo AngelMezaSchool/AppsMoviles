@@ -1,35 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/layout01"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout01"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primeLight"
+    android:background="@color/moneyColor"
+    android:foregroundTint="#214E25"
     tools:context=".CustomerDetails">
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_img2"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:src="@drawable/profile_foto2"
+        android:layout_marginTop="20dp"
+        android:transitionName="trans01"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2.5dp"
         app:layout_constraintBottom_toBottomOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
-        android:transitionName="trans01"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout02"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/round_bg"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#D3F8D5"
+        android:foregroundTint="#590B0B"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideline1">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline1"
+        app:layout_constraintVertical_bias="0.0">
 
         <Button
             android:id="@+id/transferMoney"
@@ -37,24 +42,26 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_marginTop="28dp"
-            android:backgroundTint="@color/primeLight"
             android:background="@drawable/round_button_bg"
+            android:backgroundTint="@color/primeLight"
             android:text="Transfer Money"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:backgroundTint="@null"
+            app:backgroundTint="#0D2A05"
+            app:iconTint="#6A3737"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/balance" />
+            app:layout_constraintTop_toBottomOf="@+id/balance"
+            app:rippleColor="#6D3333" />
 
         <TableLayout
             android:id="@+id/table01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:padding="5dp"
             android:background="@drawable/rounded_border"
+            android:padding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/phoneNo">
@@ -62,8 +69,8 @@
             <TableRow>
 
                 <TextView
-                    android:background="@color/white"
                     android:layout_margin="5dp"
+                    android:background="@color/white"
                     android:padding="3dip"
                     android:text="@string/AccountNo"
                     android:textColor="@color/black"
@@ -71,9 +78,9 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:background="@color/white"
-                    android:layout_margin="5dp"
                     android:id="@+id/AccNo"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
                     android:gravity="right"
                     android:padding="3dip"
                     android:text="XXXXXXXXXXXX1231"
@@ -84,8 +91,8 @@
             <TableRow>
 
                 <TextView
-                    android:background="@color/white"
                     android:layout_margin="5dp"
+                    android:background="@color/white"
                     android:padding="3dip"
                     android:text="@string/ifsc"
                     android:textAlignment="center"
@@ -93,9 +100,9 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:background="@color/white"
-                    android:layout_margin="5dp"
                     android:id="@+id/ifscCode"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
                     android:padding="3dip"
                     android:text="ABC09876541"
                     android:textAlignment="center"
@@ -136,7 +143,6 @@
 
         <TextView
             android:id="@+id/phoneNo"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -145,6 +151,7 @@
             android:drawableTint="@color/primeLight"
             android:text="6392579668"
             android:textSize="30dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/transferMoney" />
@@ -153,6 +160,7 @@
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#00402A2A"
             android:drawableStart="@drawable/ic_baseline_email_24"
             android:drawablePadding="5dp"
             android:drawableTint="@color/yellow"
@@ -161,20 +169,22 @@
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name"/>
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
         <Button
             android:id="@+id/transactionsBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="15dp"
             android:layout_marginTop="21dp"
-            android:backgroundTint="@color/yellow"
+            android:backgroundTint="@color/moneyColor"
             android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
-            app:layout_constraintTop_toBottomOf="@id/table01"
-            app:layout_constraintStart_toStartOf="parent"
+            android:padding="15dp"
+            android:text="Transactions"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="Transactions"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/table01" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"

@@ -1,4 +1,4 @@
-package com.example.bankingapp.model
+package com.example.agil_financiera.model
 
 data class Customer(
     var name:String,

@@ -1,4 +1,4 @@
-package com.example.bankingapp
+package com.example.agil_financiera
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,13 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
-import com.example.bankingapp.adapter.SpinnerArrayAdapterCustomer
-import com.example.bankingapp.databinding.ActivityCustomerDetailsBinding
-import com.example.bankingapp.dbHelper.DBhelper
-import com.example.bankingapp.model.SpinCustomers
-import com.example.bankingapp.model.SpinnerCustomer
+import com.example.agil_financiera.adapter.SpinnerArrayAdapterCustomer
+import com.example.agil_financiera.databinding.ActivityCustomerDetailsBinding
+import com.example.agil_financiera.dbHelper.DBhelper
+import com.example.agil_financiera.model.SpinCustomers
+import com.example.agil_financiera.model.SpinnerCustomer
 import java.text.SimpleDateFormat
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 class CustomerDetails : AppCompatActivity() {

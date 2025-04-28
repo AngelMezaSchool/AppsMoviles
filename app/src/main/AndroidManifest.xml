@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bankingapp">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -9,19 +8,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
-            android:name=".TransactionsActivity"
+            android:name="com.example.agil_financiera.TransactionsActivity"
             android:exported="true"
             android:theme="@style/CustomNoActionBar"/>
         <activity
-            android:name=".CustomerDetails"
+            android:name="com.example.agil_financiera.CustomerDetails"
             android:exported="true"
             android:theme="@style/CustomNoActionBar" />
         <activity
-            android:name=".Customers"
+            android:name="com.example.agil_financiera.Customers"
             android:exported="true"
             android:theme="@style/CustomNoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.agil_financiera.MainActivity"
             android:exported="true"
             android:theme="@style/CustomNoActionBar">
             <intent-filter>

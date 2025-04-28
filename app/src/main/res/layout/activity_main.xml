@@ -4,23 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/facebook_cover_photo_2"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.61"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/layout2"
-        android:src="@drawable/logo_transparent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/round_bg"
+        android:backgroundTint="@color/green01"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.39"
@@ -38,23 +30,28 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/layout2"
             app:layout_constraintStart_toStartOf="@id/layout2"
-            app:layout_constraintTop_toTopOf="@id/layout2"/>
+            app:layout_constraintTop_toTopOf="@id/layout2" />
+
         <Button
             android:id="@+id/btn"
-            android:background="@drawable/round_button_bg"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/round_button_bg"
+            android:backgroundTint="@color/moneyColor"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:elevation="50dp"
+            android:padding="15dp"
             android:text="@string/ViewCust"
             android:textSize="20sp"
-            android:padding="15dp"
-            android:elevation="50dp"
-            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
-            app:layout_constraintTop_toBottomOf="@id/welcome_msg"
-            android:layout_marginTop="30dp"
-            app:layout_constraintStart_toStartOf="@id/layout2"
-            app:layout_constraintEnd_toEndOf="@id/layout2"
+            app:iconTint="@color/moneyColor"
             app:layout_constraintBottom_toBottomOf="@id/layout2"
-            android:layout_marginBottom="40dp"/>
+            app:layout_constraintEnd_toEndOf="@id/layout2"
+            app:layout_constraintStart_toStartOf="@id/layout2"
+            app:layout_constraintTop_toBottomOf="@id/welcome_msg"
+            app:rippleColor="#8BC34A" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

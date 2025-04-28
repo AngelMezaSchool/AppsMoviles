@@ -11,9 +11,10 @@
         android:id="@+id/transactionRecycle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#11240D"
+        android:layoutAnimation="@anim/item_layout_animation"
         android:padding="10dp"
         android:scrollbars="vertical"
-        android:layoutAnimation="@anim/item_layout_animation"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </FrameLayout>

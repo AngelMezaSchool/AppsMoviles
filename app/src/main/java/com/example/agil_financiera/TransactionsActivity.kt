@@ -1,15 +1,13 @@
-package com.example.bankingapp
+package com.example.agil_financiera
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.bankingapp.adapter.ItemAdapter
-import com.example.bankingapp.adapter.TransactionItemAdapter
-import com.example.bankingapp.databinding.ActivityTransactionsBinding
-import com.example.bankingapp.dbHelper.DBhelper
+import com.example.agil_financiera.adapter.TransactionItemAdapter
+import com.example.agil_financiera.databinding.ActivityTransactionsBinding
+import com.example.agil_financiera.dbHelper.DBhelper
 
 class TransactionsActivity : AppCompatActivity() {
     private lateinit var dbHelper: DBhelper

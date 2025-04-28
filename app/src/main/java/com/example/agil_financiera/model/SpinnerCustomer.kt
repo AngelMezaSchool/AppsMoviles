@@ -1,4 +1,4 @@
-package com.example.bankingapp.model
+package com.example.agil_financiera.model
 
 data class SpinnerCustomer(val name:String,val phone:String)
 

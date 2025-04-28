@@ -1,9 +1,9 @@
-package com.example.bankingapp
+package com.example.agil_financiera
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.bankingapp.databinding.ActivityMainBinding
+import com.example.agil_financiera.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

@@ -1,16 +1,21 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' } // <-- AQUI, SOLO AQUÍ
+        gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' } // <-- TAMBIÉN AQUI
+        gradlePluginPortal()
     }
 }
-rootProject.name = "BankingApp"
+
+rootProject.name = "Agil_Financiera"
 include ':app'
